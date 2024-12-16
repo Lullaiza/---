@@ -1,0 +1,735 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+.header {
+	position: sticky;
+	top: 0;
+	padding-right: 236px;
+	padding-left: 236px;
+	background-color: #fff1d7;
+}
+
+.header1 {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 90px;
+	z-index: 9999;
+}
+
+.logo {
+	width: 90px;
+}
+
+.header button {
+	display: flex;
+    align-items: center;
+}
+
+body {
+	background-color: #000000;
+	display: flex;
+	max-width: 1440px;
+	margin: 0 auto;
+	flex-direction: column;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.nav-item {
+	color: #000000;
+	text-decoration: none;
+	font-weight: 700;
+	font-size: 19px;
+	font-family: Noto Serif;
+	border: none;
+}
+
+.header-active {
+	transition: color 0.3s linear;
+}
+
+.header-active:hover {
+	color: #71b378;
+}
+
+.tel {
+	margin: 8px;
+}
+
+.maps {
+	cursor: pointer;
+	font-style: normal;
+}
+
+.outside-active {
+	transition: color 0.3s linear;
+}
+
+.outside-active:hover {
+	color: #E03F38;
+}
+
+.btn_green {
+	padding: 12px;
+	font-size: 16px;
+	background-color: #71b378;
+	color: #000000;
+	cursor: pointer;
+}
+
+.btn_red {
+	padding: 12px;
+	font-size: 16px;
+	background-color: #E03F38;
+	color: #000000;
+	cursor: pointer;
+}
+
+.btn_green:hover {
+	padding: 12px;
+	font-size: 16px;
+	background-color: #d4d4d4;
+}
+
+.btn_red:hover {
+	padding: 12px;
+	font-size: 16px;
+	background-color: #d4d4d4;
+}
+
+.chevron {
+	margin-left: 8px;
+}
+
+.slider-container {
+	position: relative;
+	height: 645px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.slides {
+	transition: transform 0.5s ease;
+	opacity: 0.9;
+	height: 645px;
+}
+
+.slides:hover {
+	opacity: 1;
+}
+
+.slide {
+	min-width: 100%;
+}
+
+.photo {
+	background-size: cover;
+	width: 100%;
+	height: 645px;
+}
+
+.arrow {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	font-size: 24px;
+	cursor: pointer;
+	color: white;
+	background-color: rgba(0, 0, 0, 0.5);
+	padding: 10px;
+	border: none;
+}
+
+.arrow.left {
+	left: 0;
+}
+
+.arrow.right {
+	right: 0;
+}
+
+.click {
+	margin-top: 80px;
+}
+
+.click a {
+	display: flex;
+    align-items: flex-end;
+}
+
+.text-overlay {
+	position: absolute;
+	top: 120px;
+	left: 146px;
+	color: white;
+	font-family: 'Advent Pro', sans-serif;
+}
+
+.text-overlay h1 {
+	font-size: 130px;
+}
+
+.text-overlay h2 {
+	font-size: 26px;
+	width: 150px;
+}
+
+.text-overlay a {
+	margin-top: 80px;
+	color: #000000;
+	font-family: Rubik;
+	text-decoration: none;
+}
+
+
+.photo_list {
+	display: flex;
+	background-color: #FFFFFF;
+	padding-top: 15px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-bottom: 125px;
+	justify-content: space-between;
+}
+
+.photo_el {
+	width: 460px;
+}
+
+.photo_el button {
+	display: flex;
+    align-items: flex-end;
+}
+
+.ocna {
+	background-size: cover;
+	width: 100%;
+	max-height: 280px;
+}
+
+.btn_list {
+	width: 100%;
+	text-align: left;
+}
+
+.about {
+	display: flex;
+	height: 650px;
+	background-color: #d1d1d1;
+	padding: 125px;
+	position: relative;
+	align-items: center;
+}
+
+.about_title {
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	top: 125px;
+	right: 125px;
+	font-family: 'Advent Pro', sans-serif;
+	font-weight: bold;
+	font-size: 48px;
+}
+
+.about_img {
+	display: flex;
+	position: absolute;
+	top: 125px;
+	left: 125px;
+	height: 650px;
+	width: 775px;
+	background-color: #454545;
+	background-size: cover;
+}
+
+.deva {
+	width: 775px;
+	height: 650px;
+	background-size: cover;
+}
+
+.about_text {
+	padding: 50px;
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	right: 125px;
+	height: 375px;
+	width: 675px;
+	background-color: #FFFFFF;
+	justify-content: space-between;
+}
+
+.btn_about {
+	margin-right: auto;
+}
+
+.about_text p {
+	font-family: Rubik;
+	font-size: 20px;
+}
+
+.about_paragraph1 {
+	margin-bottom: 20px;
+}
+
+.about_paragraph2 {
+	margin-bottom: 44px;
+}
+
+.about_text a {
+	color: #000000;
+	font-family: Rubik;
+	text-decoration: none;
+	font-weight: bold;
+	display: flex;
+	align-items: center;
+}
+
+.buildings {
+	display: flex;
+	flex-wrap: wrap;
+	height: 675px;
+	justify-content: space-between;
+	align-content: space-between;
+	background-color: #ffffff;
+	padding: 125px;
+	overflow: hidden;
+	position: relative;
+}
+
+.building {
+	position: relative;
+	background-size: cover;
+	width: 365px;
+	height: 315px;
+}
+
+.building button {
+	display: flex;
+    align-items: center;
+}
+
+.class {
+	border: 1px solid #99afbf93;
+	cursor: pointer;
+}
+
+.btn_buildings {
+	display: inline-block;
+	margin-top: 75px;
+}
+
+.corps {
+	object-fit: cover;
+	height: 100%;
+	width: 100%;
+}
+
+.building_text {
+	position: absolute;
+	display: flex;
+	padding: 25px;
+	box-sizing: border-box;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	top: 0;
+	opacity: 0;
+	transition: 0.3s;
+	height: 100%;
+	width: 100%;
+	background-color: #000000d6;
+    flex-direction: column;
+}
+
+.building_title {
+	color: #ffffff;
+	font-family: Rubik;
+	font-size: 30px;
+}
+
+.description {
+	color: #ffffff;
+	font-family: Rubik;
+	font-size: 18px;
+	margin-top: 20px;
+}
+
+.building:hover .building_text {
+	opacity: 1;
+}
+
+.price_title {
+	font-family: 'Advent Pro', sans-serif;
+	font-weight: bold;
+	font-size: 48px;
+	width: 220px;
+}
+
+.price {
+	background-color: #d1d1d1;
+	padding: 125px;
+	height: 650px;
+	overflow: hidden;
+	position: relative;
+}
+
+.price_container {
+	display: flex;
+	margin-top: -57px;
+	align-items: center;
+}
+
+.price_list {
+	display: flex;
+	flex-direction: column;
+	padding: 100px;
+	height: 257px;
+	width: 316px;
+	background-color: #FFFFFF;
+	justify-content: space-between;
+	font-family: Rubik;
+	font-size: 25px;
+	color: #000000;
+	margin-right: -100px;
+	z-index: 3;
+}
+
+.price_list button {
+	display: flex;
+    align-items: center;
+}
+
+.cost {
+	text-decoration: underline;
+	color: #000000;
+	transition: color 0.3s linear;
+}
+
+.cost:hover {
+	color: #E03F38;
+}
+
+.btn_price {
+	display: inline-block;
+	margin-top: 30px;
+	margin-right: auto;
+}
+
+.price_box {
+	height: 650px;
+	width: 775px;
+	background-size: cover;
+}
+
+.price_item {
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 65px;
+	padding-left: 165px;
+	height: 520px;
+	width: 545px;
+	background-color: #6f6f6f;
+	opacity: 0;
+	visibility:hidden;
+	transition: 0.3s;
+}
+
+.price_item_active {
+	opacity: 1;
+	visibility: visible;
+}
+
+.free_name {
+	color: #ffffff;
+	font-family: Rubik;
+	font-size: 30px;
+}
+
+.free_training {
+	color: #000000;
+	font-family: Rubik;
+	font-size: 18px;
+}
+
+.free_value {
+	color: #ffffff;
+	font-family: Rubik;
+	font-size: 50px;
+}
+
+.free_block {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.free_description {
+	display: flex;
+    flex-direction: column;
+	width: 320px;
+}
+
+.application {
+	background-color: #ffffff;
+	padding: 125px;
+	overflow: hidden;
+	position: relative;
+}
+
+.application_title {
+	display: flex;
+	flex-direction: column;
+	font-family: 'Advent Pro', sans-serif;
+	font-weight: bold;
+	font-size: 48px;
+
+}
+
+.application_input {
+	display: flex;
+	margin-top: 50px;
+	width: 791px;
+	padding: 50px;
+	background-color: #d1d1d1;
+	background-size: cover;
+
+}
+
+.application_input button {
+	display: flex;
+    align-items: center;
+}
+
+.application_foto {
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	top: 235px;
+	right: 125px;
+	height: 508px;
+	width: 540px;
+	background-color: #c2c2c2;
+}
+
+.applic {
+	background-size: cover;
+    width: 100%;
+    max-height: 508px;
+}
+
+.form {
+	width: 791px;
+	display: flex;
+    align-items: flex-end;
+}
+
+.form_column {
+	width: 550px;
+}
+
+.write {
+	font-family: Rubik;
+	font-size: 25px;
+	color: #000000;
+	width: 100%;
+}
+
+.write_type {
+	font-family: Rubik;
+	font-size: 15px;
+	width: 100%;
+	height: 40px;
+	padding-left: 15px;
+	background-color: #ffffff;
+	border: none;
+	box-sizing: border-box;
+}
+
+.write_type::placeholder {
+	color: #acacac;
+}
+
+.indent {
+	margin-bottom: 27px;
+	display: block;
+	width: 100%;
+}
+
+.indent2 {
+	margin-bottom: 9px;
+	display: block;
+}
+
+.tren {
+	display: flex;
+	width: 100%;
+}
+
+.tren .indent {
+	margin-bottom: 0;
+}
+
+.tren .indent:not(:last-child) {
+	margin-right: 20px;
+}
+
+.btn_application {
+	height: 42px;
+	margin-left: 50px;
+}
+
+.footer {
+	height: 250px;
+	background-color: #767676;
+	display: flex;
+	padding: 50px;
+	justify-content: space-between;
+	font-family: Rubik;
+}
+
+.foot_info {
+	display: flex;
+	color: white;
+	font-family: 'Advent Pro', sans-serif;
+	font-size: 26px;
+	width: 302px;
+	justify-content: space-between;
+	flex-direction: column;
+}
+
+.logo-2 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	flex-direction: row;
+}
+
+.icons {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+li::marker {
+	color:#00000000;
+}
+
+.icon {
+	color: black;
+}
+
+.rect {
+	width: 109px;
+	height: 109px;
+	border-radius: 50%;
+	margin-right: 20px;
+}
+
+.foot {
+	display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: space-between;
+}
+
+.foot_1 {
+	width: 228px;
+}
+
+.icons-active {
+	transition: color 0.3s linear;
+}
+
+.icons-active:hover {
+	color: #E03F38;
+}
+
+.foot_in {
+	color: #ffffff;
+	background: none;
+	text-align: left;
+	cursor: pointer;
+}
+
+.foot_in-active {
+	transition: color 0.3s linear;
+}
+
+.foot_in-active:hover {
+	color: #71b378;
+}
+
+.foot_mode {
+	display: flex;
+	flex-direction: column;
+	color: white;
+	justify-content: space-between;
+}
+
+.mode {
+	background-color: #E03F38;
+	color: black;
+	padding: 10px;
+	height: 35px;
+	font-family: 'Advent Pro', sans-serif;
+	font-weight: bold;
+	font-size: 30px;
+	text-align: center;
+}
+
+.regime {
+	text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 90px;
+    margin-bottom: 60px;
+    margin-top: 16px;
+	font-weight: 700;
+    font-size: 19px;
+    font-family: Rubik;
+}
+
+.regime_block {
+	margin-bottom: 50px;
+}
+
+.mode_map {
+	text-align: right;
+}
+
+.map {
+	color: #ffffff;
+	font-size: 25px;
+	cursor: pointer;
+	font-style: normal;
+}
+
+.map-active {
+	transition: color 0.3s linear;
+}
+
+.map-active:hover {
+	color: #E03F38;
+}
